@@ -2,7 +2,7 @@ const http = require('http');
 
 const server = http.createServer((request, response) => {
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World!*! From Jenkins & Docker, DockerHub and of course Node.js Test from K8s for Shez on Friday");
+    response.end("Hello World!*! From Jenkins & Docker, DockerHub and of course Node.js Test from K8s for Glenn on Wednesday!!!");
 });
 
 const port = process.env.PORT || 80;
