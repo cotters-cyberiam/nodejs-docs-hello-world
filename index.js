@@ -9,4 +9,4 @@ const port = process.env.PORT || 80;
 server.listen(port);
 
 console.log("Server running at http://localhost:%d", port);
-console.log("Secret1 is ", process.env.SECRET1);
+console.log("Secret1 is %s", process.env.SECRET1);
