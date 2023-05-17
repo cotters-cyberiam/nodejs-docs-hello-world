@@ -2,7 +2,7 @@ const http = require('http');
 const Info = process.env.SECRET2;
 const server = http.createServer((request, response) => {
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World!*! From Jenkins & Docker, DockerHub and of course Node.js - {Info}");
+    response.end("Hello World!*! From Jenkins & Docker, DockerHub and of course Node.js - %s", Info);
 });
 
 const port = process.env.PORT || 80;
